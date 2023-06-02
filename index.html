@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <!-- main css file start -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Main css file close -->
+
+    <!-- Google fonts start -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Splash&display=swap"
+      rel="stylesheet" />
+
+    <!-- google fonts close -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" id="myResult" />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="deleteMe('')" />
+            <input type="button" value="DE" onclick="singleDelete()" />
+            <input type="button" value="." onclick="calculator('.')" />
+            <input type="button" value="/" onclick="calculator('/')" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="calculator('7')" />
+            <input type="button" value="8" onclick="calculator('8')" />
+            <input type="button" value="9" onclick="calculator('9')" />
+            <input type="button" value="*" onclick="calculator('*')" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="calculator('4')" />
+            <input type="button" value="5" onclick="calculator('5')" />
+            <input type="button" value="6" onclick="calculator('6')" />
+            <input type="button" value="-" onclick="calculator('-')" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="calculator('1')" />
+            <input type="button" value="2" onclick="calculator('2')" />
+            <input type="button" value="3" onclick="calculator('3')" />
+            <input type="button" value="+" onclick="calculator('+')" />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="calculator('00')" />
+            <input type="button" value="0" onclick="calculator('0')" />
+            <input type="button" value="=" class="equal" onclick="answer('')" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
